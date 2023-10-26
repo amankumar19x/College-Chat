@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#6637B8"
+        android:orientation="horizontal"
+        android:id="@+id/llToolbar"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College Chat"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/spartan_bold"/>
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:src="@drawable/baseline_settings_24"
+            android:layout_gravity="center"
+            android:id="@+id/imgSetting"
+            android:layout_marginEnd="@dimen/_20sdp"/>
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:src="@drawable/baseline_logout_24"
+            android:layout_gravity="center"
+            android:id="@+id/imgLogout"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llToolbar"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/recyclerView"/>
+
+</RelativeLayout>
